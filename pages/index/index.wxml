@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="flx head">
+    <view class="headImg">
+      <tailor selWidth="420rpx" selHeight="500rpx" bindupload="myUpload" avatarSrc="{{img}}" avatarStyle="width: 210rpx; height: 250rpx;" id="tailor" noTab="true"></tailor>
+    </view>
+    <view class="upload flx">
+      <view bindtap="upload"><text>上传照片</text><image src="/img/arrow.png" mode="widthFix"/></view>
+    </view>
+  </view>
+</view>

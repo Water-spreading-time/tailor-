@@ -1,0 +1,15 @@
+<view>
+  <image src="{{imgSrc.imgSrc}}" bindtap="fSelect" style="{{[ imgStyle ]}}" class="my-avatar" mode="widthFix"></image>
+  <canvas canvas-id="avatar-canvas" class="my-canvas" style="top:{{styleTop}};height:{{cvsStyleHeight}}" disable-scroll="false"></canvas>
+  <canvas canvas-id="oper-canvas" class="oper-canvas" style="top:{{styleTop}};height:{{cvsStyleHeight}}" disable-scroll="false" bindtouchstart="fStart" bindtouchmove="fMove" bindtouchend="fEnd"></canvas>
+  <canvas canvas-id="prv-canvas" class="prv-canvas" disable-scroll="false" bindtouchstart="fHideImg"	style="height:{{cvsStyleHeight}}; top:{{ prvTop }}"></canvas>
+  <view class="oper-wrapper" style="display: {{styleDisplay}}">
+    <view class="oper">
+      <view class="btn-wrapper">
+        <view bindtap="fSelect"  hover-class="hover" style="width: {{btnWidth}}"><text>重选</text></view>
+        <view bindtap="fClose"  hover-class="hover" style="width: {{btnWidth}}"><text>关闭</text></view>
+        <view bindtap="fUpload"  hover-class="hover" style="width:{{ btnWidth}}"><text>使用</text></view>
+      </view>
+    </view>
+  </view>
+</view>

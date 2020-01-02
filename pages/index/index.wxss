@@ -1,0 +1,51 @@
+page{
+  background: #F0F0F0;
+}
+.container {
+  height: 100%;
+  width:100%;
+  box-sizing: border-box;
+}
+view{
+  box-sizing: border-box;
+  width:100%;
+}
+.flx{
+  display: flex;
+}
+.head{
+  background: #fff;
+  padding:20rpx 30rpx;
+  margin-top:20rpx;
+}
+.headImg{
+  width:210rpx;
+  height:250rpx;
+  border-radius: 2px;
+}
+.upload{
+  width:calc(100% - 210rpx);
+  font-size:28rpx;
+  color:#323232;
+  align-items: center;
+}
+.upload image{
+  width:16rpx;
+  vertical-align: middle;
+  margin-left:15rpx;
+}
+.upload text{
+  vertical-align: middle;
+}
+.upload view{
+  text-align: right;
+}
+canvas{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: #000;
+  z-index: 9999;
+}
