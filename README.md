@@ -57,7 +57,7 @@ miniprogrampatch.js:
 > https://github.com/hendiko/miniprogrampatch
 
 ```bash
-引入后再app.js中注册
+引入后在app.js中注册
 const regeneratorRuntime = require('/utils/runtime.js')
 const { patchPage, patchComponent } = require('/utils/miniprogrampatch.js')
 
